@@ -1,21 +1,24 @@
-package Default;
+package First_Package;
 
-public class Student {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		Person p1 = new Person() ;
-		p1.setIncome(10000);
-		p1.setPemail("prajyotraut");
-		p1.setPname("Prajyot");
-		p1.setTax(2.0f);
-
-		String s  = p1.toString();
-		System.out.println(s);
-
-		
-
+public class Student 
+{
+	int uid;
+	String sname;
+	
+	public int getUid() {
+		return uid;
 	}
-
+	public void setUid(int uid) {
+		this.uid = uid;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	@Override
+	public String toString() {
+		return "Student [uid=" + uid + ", sname=" + sname + "]";
+	}
 }
